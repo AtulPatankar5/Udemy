@@ -35,7 +35,9 @@ function App() {
       {/* <Fruits /> */}
       {/* <DemoComponents value={false} value2={new Date().getFullYear()}/> */}
       {/* <DemoComponents {...Student} /> */}
-      <DemoComponents value={5}>Hello</DemoComponents>
+      {/* <DemoComponents value={5}>Hello</DemoComponents> */}
+       {/* <SyntheticEvent/> */}
+       <PreventDefault/>
     </div>
   );
 }
