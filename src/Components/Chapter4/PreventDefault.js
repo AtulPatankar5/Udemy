@@ -8,8 +8,9 @@ export default function PreventDefault() {
 
   const [obj, setObj] = useState({
     fname: "",
-    lname: "",
+    gender: false,
     mob: "",
+    // data:""
   });
 
   // const fNameHandler = (e) => {
@@ -28,13 +29,21 @@ export default function PreventDefault() {
 
   const inputChangeHandler = (e) => {
     // setObj({ ...obj, [e.target.name]: e.target.value });
-    setObj((prevState)=>{
-      return {...obj, [e.target.name]: e.target.value}
-    })
+    setObj((prevState) => {
+      return { ...prevState, [e.target.name]: e.target.value };
+    });
   };
+  const inputCheckHandler = (e) => {
+    // setObj({ ...obj, [e.target.name]: e.target.value });
+    setObj((prevState) => {
+      return { ...prevState, [e.target.name]: e.target.checked };
+    });
+  };
+
   const getData = (e) => {
     e.preventDefault();
     setData(obj.fname + "," + obj.lname + "," + obj.mob);
+    // setObj(data:obj.fname)
     // console.log("Form Submitted");
   };
   return (
@@ -48,12 +57,13 @@ export default function PreventDefault() {
           onChange={inputChangeHandler}
         />
         <br />
+        Gender:
         <input
-          type="text"
-          name="lname"
-          placeholder="Enter LAST NAME"
+          type="checkbox"
+          name="gender"
+          placeholder="Gender"
           // onChange={lNameHandler}
-          onChange={inputChangeHandler}
+          onChange={inputCheckHandler}
         />
         <br />
         <input
