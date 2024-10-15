@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+
+.per{
+  width:300px;
+  border:1px solid black;
+  display: inline-block;
+  padding : 10px;
+  margin: 10px;
+}
+
+.customButton{
+  width:200px;
+  height:100px;
+  color:purple;
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+}
