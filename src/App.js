@@ -11,6 +11,7 @@ import UseRefFunction from "./Components/Chapter1/UseRefFunction";
 import Memo from "./Components/Chapter1/Memo/Memo";
 import Fruits from "./Components/Chapter2/Fruits";
 import DemoComponents from "./Components/Chapter3/DemoComponents";
+import PreventDefault from "./Components/Chapter4/PreventDefault";
 
 function App() {
   const [showData, changeState] = useState(true);
