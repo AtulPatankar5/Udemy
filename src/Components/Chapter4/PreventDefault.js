@@ -34,7 +34,7 @@ export default function PreventDefault() {
     });
   };
   const inputCheckHandler = (e) => {
-    // setObj({ ...obj, [e.target.name]: e.target.value });
+    // setObj({ ...obj, [e.target.name]: e.target.checked });
     setObj((prevState) => {
       return { ...prevState, [e.target.name]: e.target.checked };
     });
