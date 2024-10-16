@@ -12,6 +12,8 @@ import Memo from "./Components/Chapter1/Memo/Memo";
 import Fruits from "./Components/Chapter2/Fruits";
 import DemoComponents from "./Components/Chapter3/DemoComponents";
 import PreventDefault from "./Components/Chapter4/PreventDefault";
+import UserForm from "./Components/Chapter4/UserForm";
+import Conditionalrendering from "./Components/Chapter5/Conditionalrendering";
 
 function App() {
   const [showData, changeState] = useState(true);
@@ -38,7 +40,9 @@ function App() {
       {/* <DemoComponents {...Student} /> */}
       {/* <DemoComponents value={5}>Hello</DemoComponents> */}
        {/* <SyntheticEvent/> */}
-       <PreventDefault/>
+       {/* <PreventDefault/> */}
+       {/* <UserForm/> */}
+        <Conditionalrendering/>
     </div>
   );
 }
