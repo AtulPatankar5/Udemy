@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 export default function useRefFunction() {
   const iElement = useRef(null);
   useEffect(() => {
+    // console.log(iElement)
     iElement.current.focus();
   });
   return (

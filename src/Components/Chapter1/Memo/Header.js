@@ -15,4 +15,4 @@ function Header() {
 }
 
 
-export default React.memo(Header);
+export default React.memo(Header);// Prevent render of whole page when only 1 component is changed

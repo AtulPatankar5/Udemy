@@ -5,7 +5,7 @@ function initialState() {
   return 0;
 }
 
-let GlobCounter=0;
+let GlobCounter = 0;
 export default function FunctionalBasic() {
   // const [count, setCount] = useState(() => initialState()); // initial state is used as lazy initialization and it is used only when the page is rendered once. For every click it won't work
   // const [flag,setFlag]=useState(true);
@@ -21,11 +21,10 @@ export default function FunctionalBasic() {
     let tempCounter = obj.count;
     if (op === "+") {
       tempCounter++;
-      setObj({ ...obj, count: tempCounter });
     } else {
       tempCounter--;
-      setObj({ ...obj, count: tempCounter });
     }
+    setObj({ ...obj, count: tempCounter });
   };
   const btnStyle = {
     width: "200px",
@@ -41,9 +40,9 @@ export default function FunctionalBasic() {
 
   let msg = React.createElement("h1", { style: { color: "blue" } }, "Hello");
 
-  useEffect(()=>{
-    console.log("Effect :" +GlobCounter++)
-  },[obj.count])// this objcount means useEffect will be affected by only count state change and not with any other state 
+  useEffect(() => {
+    console.log("Effect :" + GlobCounter++)
+  }, [obj.count])// this obj.count means useEffect will be triggered  only when count state is changed and not with any other state 
   return (
     <div>
       <h1>{obj.count}</h1>
@@ -60,8 +59,8 @@ export default function FunctionalBasic() {
       <h2>{obj.flag.toString()}</h2>
       <h2>{JSON.stringify(obj)}</h2>
       <button onClick={() => setObj({ ...obj, flag: !obj.flag })}>
-        Toggle Flag{" "}
-      </button>
+        Toggle Flag {obj.flag.toString()}      
+        </button>
     </div>
   );
 }

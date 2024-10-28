@@ -8,4 +8,4 @@ function DisplayCounter(props) {
     </div>
   );
 }
-export default React.memo(DisplayCounter);
+export default React.memo(DisplayCounter);// Prevent render of whole page when only 1 component is changed

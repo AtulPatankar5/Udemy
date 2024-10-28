@@ -16,6 +16,8 @@ export default class ClassRef extends Component {
         <hr></hr>
         {/* <input text="text" ref={(ele)=> this.iElement=ele}/> */}
         <input text="text" ref={this.iElement}/>
+        {/* <hr/> */}
+        {/* <input text="text" ref={this.iElement}/> */}
         <hr></hr>
         {/* <button onClick={()=>this.iElement.focus()}>Focus</button> */}
         <button onClick={()=>this.iElement.current.focus()}>Focus</button>

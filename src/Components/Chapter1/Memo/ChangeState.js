@@ -16,4 +16,4 @@ function ChangeState(props) {
   );
 }
 
-export default React.memo(ChangeState);
+export default React.memo(ChangeState);// Prevent render of whole page when only 1 component is changed

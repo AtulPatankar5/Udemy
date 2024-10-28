@@ -9,7 +9,7 @@ export default function Memo() {
   const [cont, setCount] = useState(0);
   const [flag, setFlag] = useState(true);
   const changeCounter = useCallback(() => {
-    // Usecallback is used to render Change State component based on cont only
+    // Usecallback is used to render Change State component based on count only
     setCount(cont + 1);
   }, [cont]);
   const changeFlag = useCallback(() => {

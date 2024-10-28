@@ -14,6 +14,7 @@ import DemoComponents from "./Components/Chapter3/DemoComponents";
 import PreventDefault from "./Components/Chapter4/PreventDefault";
 import UserForm from "./Components/Chapter4/UserForm";
 import Conditionalrendering from "./Components/Chapter5/Conditionalrendering";
+import SyntheticEvent from "./Components/Chapter4/SyntheticEvent";
 
 function App() {
   const [showData, changeState] = useState(true);
@@ -32,6 +33,7 @@ function App() {
 
       {/* {showData ? <ShowXY /> : <h1>No Data</h1>}
       <button onClick={()=>changeState(!showData)}>Toggle </button> */}
+      
       {/* <ClassRef/> */}
       {/* <UseRefFunction/> */}
       {/* <Memo/> */}

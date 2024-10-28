@@ -42,7 +42,7 @@ export default function PreventDefault() {
 
   const getData = (e) => {
     e.preventDefault();
-    setData(obj.fname + "," + obj.lname + "," + obj.mob);
+    setData(obj.fname + "," + obj.gender + "," + obj.mob);
     // setObj(data:obj.fname)
     // console.log("Form Submitted");
   };
@@ -67,7 +67,7 @@ export default function PreventDefault() {
         />
         <br />
         <input
-          type="text"
+          type="number"
           name="mob"
           placeholder="Enter MOBILE"
           // onChange={mobHandler}
